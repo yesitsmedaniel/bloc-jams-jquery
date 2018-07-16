@@ -1,7 +1,8 @@
 class Helper {
- let helper = {}
-  playPauseAndUpdate(song) => {
-  player.playPause(song)
-  //total time?? 
+ const helper = new Helper()
 };
+
+playPauseAndUpdate(song) => {
+  console.log("called playPauseAndUpdate with " + song)
+  helper.playPauseAndUpdateplayer.playPause(song)
 }
