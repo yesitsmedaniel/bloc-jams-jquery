@@ -1,5 +1,5 @@
 { $('button#play-pause').on('click', function(){
-    helper.playPauseAndUpdate();
+    helper.playPauseAndUpdate(player.currentlyPlaying);
     $(this).attr('playState', player.playState);
 });
   $('button#next').on('click', function(){
@@ -12,7 +12,7 @@
     helper.playPauseAndUpdate(nextSong);
   });
   $('button#previous').on('click', function(){
- 
+
     if (player.playState !=='playing') {return;}
 
     const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
