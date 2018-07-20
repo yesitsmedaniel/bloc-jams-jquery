@@ -11,7 +11,7 @@ class Player {
   }
 
   getDuration() {
-    return this.soundObject.getDuration();
+    return this.currentlyPlaying.duration;
   }
 
   getTime() {
