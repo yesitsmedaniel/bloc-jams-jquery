@@ -52,10 +52,13 @@ class Player {
     this.soundObject.setVolume(percent);
   }
 
-//  prettyTime (timeInSeconds) {
-//    currentTime
-//    totalTime
-//  }
+ prettyTime (timeInSeconds = "") {
+         return Math.floor( time data / 60)
+ }
+
+//    then wrap the currentTime
+//    then wrap the totalTime
+//
 }
 
 const player = new Player();
